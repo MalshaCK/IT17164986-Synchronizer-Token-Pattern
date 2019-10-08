@@ -1,0 +1,1 @@
+This folder stores CSRF tokens for each session id

@@ -1,0 +1,35 @@
+<!--Name - Kapuge P.K.M.C-->
+<!--SID  -  IT17164986-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Required Javascript -->
+    <script type="text/javascript" src="/js/user_validation.js"></script>
+
+    <title>Log in</title>
+  </head>
+
+  <body>
+  <div class="wrapper">
+
+    <!--Invoking UserValidation Function to User Authentication -->
+    <!--After Successful Authentication Redirect Page to Generate CSRF Token -->
+    <form name="loginForm" action="CSRF_Token_Generator.php" onsubmit="return UserValidation();" method="post">
+      <input type="text" required="required" class="input-group mb-3" name="user_name" placeholder="User Name">
+      <br>
+      <input type="password" required="required" name="p_word" placeholder="Password">
+      <br>
+      <input type="submit"  class="btn btn-submit"value="Log In">
+    </form>
+  </div>
+  </body>
+</html>
